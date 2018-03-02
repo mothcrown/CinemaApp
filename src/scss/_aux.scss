@@ -1,0 +1,24 @@
+@mixin blur($px: 5px) {
+  -webkit-filter: blur($px);
+  -moz-filter: blur($px);
+  -o-filter: blur($px);
+  -ms-filter: blur($px);
+  filter: blur($px);
+}
+
+@mixin textshadow($width: 1px, $height: 1px, $blur: 1px, $color: black) {
+  text-shadow: $width $height $blur $color;
+}
+
+@mixin textstroke($width: 1px, $color: black) {
+  -webkit-text-stroke: $width $color; 
+  text-stroke: $width $color;
+}
+
+@mixin border($width: 1px, $style: solid, $color: black) {
+  border: $width $style $color;
+}
+
+@mixin borderradius($radius: .5em) {
+  border-radius: $radius;
+}

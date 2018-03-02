@@ -1,0 +1,61 @@
+{
+  "pelicula1": {
+    "titulo": "La caída de la casa Usher",
+    "sala": 1,
+    "horario": [
+      "18:00",
+      "20:00",
+      "22:00"
+    ],
+    "año": "1960",
+    "sinopsis": "Un joven caballero es invitado al viejo caserón de un amigo de la infancia, Roderick Usher, artista enfermizo y excéntrico que vive completamente recluido en compañía de su hermana, Lady Madeline, también delicada de salud.", 
+    "imagen": "caidacasausher"
+  },
+  "pelicula2": {
+    "titulo": "Suspiria",
+    "sala": 2,
+    "horario": [
+      "18:00",
+      "20:00",
+      "22:00"
+    ],
+    "año": "1977",
+    "sinopsis": "Una joven (Jessica Harper) ingresa en una exclusiva academia de baile la misma noche en que asesinan a una de las alumnas. La subdirectora del centro es la amable Madame Blank, que brinda a la nueva alumna las comodidades y facilidades necesarias para su aprendizaje. Pero, poco a poco, una atmósfera malsana se va apoderando del lugar, y la estancia de la joven se va convirtiendo en una verdadera pesadilla.",
+    "imagen": "suspiria"
+  },
+  "pelicula3": {
+    "titulo": "Xtro",
+    "sala": 3,
+    "horario": [
+      "20:00",
+      "22:00",
+      "00:00"
+    ],
+    "año": "1982",
+    "sinopsis": "Cuando Sam Phillips, un padre de familia normal y corriente, desaparece sin dejar rastro, sólo su hijo Tony sabe que lo hizo después de que un gran destello apareciera en el cielo. Pero cuando Sam reaparece tan súbitamente como se había ido, Tony sabe que algo ha cambiado y que ya no es un ser humano. A medida que el cuerpo de Sam se va deteriorando, por culpa de un extraterrestre oculto en su interior, su hijo se da cuenta de que debe actuar para detener al intruso y evitar que infecte a los humanos con los millones de larvas alienígenas que transporta.",
+    "imagen": "xtro"
+  },
+  "pelicula4": {
+    "titulo": "La maldición del hombre lobo",
+    "sala": 4,
+    "horario": [
+      "20:00",
+      "22:00",
+      "00:00"
+    ],
+    "año": "1961",
+    "sinopsis": "Tras ser violada, una joven sirvienta sordomuda da a luz a una criatura aparentemente normal. Pero a medida que el niño crece comienza a dar señales de un extraño comportamiento; sus incontrolables reacciones durante las noches de luna llena anuncian una terrorífica metamorfosis.",
+    "imagen": "maldicionhombrelobo"
+  },
+  "pelicula5": {
+    "titulo": "Mi novia es un zombie",
+    "sala": 4,
+    "horario": [
+      "10:00",
+      "12:00"
+    ],
+    "año": "1994",
+    "sinopsis": "Francesco Dellamorte es el cuidador del cementerio de Buffalora, un pueblo del norte de Italia. Dellamorte vive una vida solitaria apartado del mundo; su único amigo es Gnaghi, un pequeño, feo, lisiado y mudo compañero con el que comparte su ronda diaria por el cementerio. Desde hace algún tiempo, los muertos enterrados en el cementerio de Buffalora reviven debido a una súbita y misteriosa epidemia. Dellamorte tendrá que impedir que los muertos invadan el mundo de los vivos, algo que el resto de los humanos piensa que es sólo parte de su imaginación...",
+    "imagen": "noviazombie"
+  }
+}
