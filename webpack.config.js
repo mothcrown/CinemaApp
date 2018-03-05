@@ -6,7 +6,7 @@ module.exports = {
       './src/js/index.js',
       './src/scss/main.scss'
     ],
-    results: [
+    seats: [
       './src/js/seats.js',
       './src/scss/main.scss'
     ]

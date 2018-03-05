@@ -26,7 +26,7 @@ function refreshInfo() {
   const horario = movies[movie].horario
   const numHorario = horario.length
   for (let i = 0; i < numHorario; i += 1) {
-    $('#horas').append(`<a href="asientos.html" class="${movies[movie].titulo}-${horario[i]}">${horario[i]}</a>`)
+    $('#horas').append(`<a href="#" id="${movies[movie].titulo}-${horario[i]}" class="session">${horario[i]}</a>`)
     if (i !== numHorario - 1) {
       $('#horas').append(', ')
     }
@@ -109,26 +109,55 @@ function vote() {
   }
 }
 
-function openDialog() {
+function readyTicket(entrada) {
+  if (Storage !== void(0)) {
+    localStorage.ticket = JSON.stringify(entrada)
+  }
+}
+
+function activateSessions() {
+  $('a.session').on('click', (e) => {
+    e.preventDefault()
+    const elementId = e.currentTarget.id
+    const info = elementId.split('-')
+    const peliculaId = info[0]
+    const hora = info[1]
+    const titulo = $('#titulo').text()
+    const sala = $('#sala').text()
+    const entrada = {
+      id: peliculaId,
+      pelicula: titulo,
+      sala,
+      sesion: hora,
+      asientos: []
+    }
+    readyTicket(entrada)
+    document.location = 'asientos.html'
+  })
+}
+
+function openDialog(movie) {
   deactivateArrows()
   deactivateKeys()
   $(document).keydown((event) => {
     if (event.which === 27 || event.keyCode === 27) {
       closeDialog()
     }
-    if (event.which === 13 || event.keyCode === 13) {
-      vote()
-    }
   })
   $('.curtain').css('display', 'block')
   $('.dialog').css('display', 'flex')
   const movieName = $('#titulo').text()
   $('#tituloForm').text(movieName)
+  const movieSala = $('#sala').text()
+  $('#salaForm').text(movieSala)
+  $('#horarios').empty()
 
-  const horarios = $('#horas').children().find('a')
-  Object.values(horarios).map((hora) => {
-    $('#horarios').append(hora)
+  const horarios = movies[movie.id].horario
+  $('#horarios').append('<ul id="horariosList"></ul>')
+  horarios.map((hora) => {
+    $('#horariosList').append(`<li>${hora} <a href="#" id="${movie.id}-${hora}" class="session">Comprar entrada</a></li>`)
   })
+  activateSessions()
   /*
   const horario = movies[movieName].horario
   const numHorario = horario.length
@@ -150,8 +179,8 @@ const getMovieImg = movie => ({
 })[movie]
 
 function activatePrincipal() {
-  $('.principal').click(() => {
-    openDialog()
+  $('.principal').click((e) => {
+    openDialog(e.currentTarget)
   })
 }
 
@@ -208,9 +237,12 @@ function activateButtons() {
   })
 }
 
+
+
 $(document).ready(() => {
   generateCarousel()
   activatePrincipal()
   activateKeys()
   activateButtons()
+  activateSessions()
 })

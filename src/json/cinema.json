@@ -1,0 +1,436 @@
+{
+  "asientos": {
+    "A1": {
+      "fila": "A",
+      "asiento": "1",
+      "px": 0,
+      "py": 0
+    },
+    "A2": {
+      "fila": "A",
+      "asiento": "2",
+      "px": 50,
+      "py": 15
+    },
+    "A3": {
+      "fila": "A",
+      "asiento": "3",
+      "px": 100,
+      "py": 25
+    },
+    "A4": {
+      "fila": "A",
+      "asiento": "4",
+      "px": 150,
+      "py": 35
+    },
+    "A5": {
+      "fila": "A",
+      "asiento": "5",
+      "px": 200,
+      "py": 40
+    },
+    "A6": {
+      "fila": "A",
+      "asiento": "6",
+      "px": 250,
+      "py": 45
+    },
+    "A7": {
+      "fila": "A",
+      "asiento": "7",
+      "px": 350,
+      "py": 45
+    },
+    "A8": {
+      "fila": "A",
+      "asiento": "8",
+      "px": 400,
+      "py": 40
+    },
+    "A9": {
+      "fila": "A",
+      "asiento": "9",
+      "px": 450,
+      "py": 35
+    },
+    "A10": {
+      "fila": "A",
+      "asiento": "10",
+      "px": 500,
+      "py": 25
+    },
+    "A11": {
+      "fila": "A",
+      "asiento": "11",
+      "px": 550,
+      "py": 15
+    },
+    "A12": {
+      "fila": "A",
+      "asiento": "12",
+      "px": 600,
+      "py": 0
+    },
+    "B1": {
+      "fila": "B",
+      "asiento": "1",
+      "px": 0,
+      "py": 50
+    },
+    "B2": {
+      "fila": "B",
+      "asiento": "2",
+      "px": 50,
+      "py": 65
+    },
+    "B3": {
+      "fila": "B",
+      "asiento": "3",
+      "px": 100,
+      "py": 75
+    },
+    "B4": {
+      "fila": "B",
+      "asiento": "4",
+      "px": 150,
+      "py": 85
+    },
+    "B5": {
+      "fila": "B",
+      "asiento": "5",
+      "px": 200,
+      "py": 90
+    },
+    "B6": {
+      "fila": "B",
+      "asiento": "6",
+      "px": 250,
+      "py": 95
+    },
+    "B7": {
+      "fila": "B",
+      "asiento": "7",
+      "px": 350,
+      "py": 95
+    },
+    "B8": {
+      "fila": "B",
+      "asiento": "8",
+      "px": 400,
+      "py": 90
+    },
+    "B9": {
+      "fila": "B",
+      "asiento": "9",
+      "px": 450,
+      "py": 85
+    },
+    "B10": {
+      "fila": "B",
+      "asiento": "10",
+      "px": 500,
+      "py": 75
+    },
+    "B11": {
+      "fila": "B",
+      "asiento": "11",
+      "px": 550,
+      "py": 65
+    },
+    "B12": {
+      "fila": "B",
+      "asiento": "12",
+      "px": 600,
+      "py": 50
+    },
+    "C1": {
+      "fila": "C",
+      "asiento": "1",
+      "px": 0,
+      "py": 100
+    },
+    "C2": {
+      "fila": "C",
+      "asiento": "2",
+      "px": 50,
+      "py": 115
+    },
+    "C3": {
+      "fila": "C",
+      "asiento": "3",
+      "px": 100,
+      "py": 125
+    },
+    "C4": {
+      "fila": "C",
+      "asiento": "4",
+      "px": 150,
+      "py": 135
+    },
+    "C5": {
+      "fila": "C",
+      "asiento": "5",
+      "px": 200,
+      "py": 140
+    },
+    "C6": {
+      "fila": "C",
+      "asiento": "6",
+      "px": 250,
+      "py": 145
+    },
+    "C7": {
+      "fila": "C",
+      "asiento": "7",
+      "px": 350,
+      "py": 145
+    },
+    "C8": {
+      "fila": "C",
+      "asiento": "8",
+      "px": 400,
+      "py": 140
+    },
+    "C9": {
+      "fila": "C",
+      "asiento": "9",
+      "px": 450,
+      "py": 135
+    },
+    "C10": {
+      "fila": "C",
+      "asiento": "10",
+      "px": 500,
+      "py": 125
+    },
+    "C11": {
+      "fila": "C",
+      "asiento": "11",
+      "px": 550,
+      "py": 115
+    },
+    "C12": {
+      "fila": "C",
+      "asiento": "12",
+      "px": 600,
+      "py": 100
+    },
+    "D1": {
+      "fila": "D",
+      "asiento": "1",
+      "px": 0,
+      "py": 150
+    },
+    "D2": {
+      "fila": "D",
+      "asiento": "2",
+      "px": 50,
+      "py": 165
+    },
+    "D3": {
+      "fila": "D",
+      "asiento": "3",
+      "px": 100,
+      "py": 175
+    },
+    "D4": {
+      "fila": "D",
+      "asiento": "4",
+      "px": 150,
+      "py": 185
+    },
+    "D5": {
+      "fila": "D",
+      "asiento": "5",
+      "px": 200,
+      "py": 190
+    },
+    "D6": {
+      "fila": "D",
+      "asiento": "6",
+      "px": 250,
+      "py": 195
+    },
+    "D7": {
+      "fila": "D",
+      "asiento": "7",
+      "px": 350,
+      "py": 195
+    },
+    "D8": {
+      "fila": "D",
+      "asiento": "8",
+      "px": 400,
+      "py": 190
+    },
+    "D9": {
+      "fila": "D",
+      "asiento": "9",
+      "px": 450,
+      "py": 185
+    },
+    "D10": {
+      "fila": "D",
+      "asiento": "10",
+      "px": 500,
+      "py": 175
+    },
+    "D11": {
+      "fila": "D",
+      "asiento": "11",
+      "px": 550,
+      "py": 165
+    },
+    "D12": {
+      "fila": "D",
+      "asiento": "12",
+      "px": 600,
+      "py": 150
+    },
+    "E1": {
+      "fila": "E",
+      "asiento": "1",
+      "px": 0,
+      "py": 225
+    },
+    "E2": {
+      "fila": "E",
+      "asiento": "2",
+      "px": 50,
+      "py": 245
+    },
+    "E3": {
+      "fila": "E",
+      "asiento": "3",
+      "px": 100,
+      "py": 255
+    },
+    "E4": {
+      "fila": "E",
+      "asiento": "4",
+      "px": 150,
+      "py": 265
+    },
+    "E5": {
+      "fila": "E",
+      "asiento": "5",
+      "px": 200,
+      "py": 270
+    },
+    "E6": {
+      "fila": "E",
+      "asiento": "6",
+      "px": 250,
+      "py": 275
+    },
+    "E7": {
+      "fila": "E",
+      "asiento": "7",
+      "px": 350,
+      "py": 275
+    },
+    "E8": {
+      "fila": "E",
+      "asiento": "8",
+      "px": 400,
+      "py": 270
+    },
+    "E9": {
+      "fila": "E",
+      "asiento": "9",
+      "px": 450,
+      "py": 265
+    },
+    "E10": {
+      "fila": "E",
+      "asiento": "10",
+      "px": 500,
+      "py": 255
+    },
+    "E11": {
+      "fila": "E",
+      "asiento": "11",
+      "px": 550,
+      "py": 245
+    },
+    "E12": {
+      "fila": "E",
+      "asiento": "12",
+      "px": 600,
+      "py": 225
+    },
+    "F1": {
+      "fila": "F",
+      "asiento": "1",
+      "px": 0,
+      "py": 275
+    },
+    "F2": {
+      "fila": "F",
+      "asiento": "2",
+      "px": 50,
+      "py": 295
+    },
+    "F3": {
+      "fila": "F",
+      "asiento": "3",
+      "px": 100,
+      "py": 305
+    },
+    "F4": {
+      "fila": "F",
+      "asiento": "4",
+      "px": 150,
+      "py": 315
+    },
+    "F5": {
+      "fila": "F",
+      "asiento": "5",
+      "px": 200,
+      "py": 320
+    },
+    "F6": {
+      "fila": "F",
+      "asiento": "6",
+      "px": 250,
+      "py": 325
+    },
+    "F7": {
+      "fila": "F",
+      "asiento": "7",
+      "px": 350,
+      "py": 325
+    },
+    "F8": {
+      "fila": "F",
+      "asiento": "8",
+      "px": 400,
+      "py": 320
+    },
+    "F9": {
+      "fila": "F",
+      "asiento": "9",
+      "px": 450,
+      "py": 315
+    },
+    "F10": {
+      "fila": "F",
+      "asiento": "10",
+      "px": 500,
+      "py": 305
+    },
+    "F11": {
+      "fila": "F",
+      "asiento": "11",
+      "px": 550,
+      "py": 295
+    },
+    "F12": {
+      "fila": "F",
+      "asiento": "12",
+      "px": 600,
+      "py": 275
+    }
+  }
+}

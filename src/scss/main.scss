@@ -277,8 +277,11 @@ input[type="button"] {
   z-index: 15;
 }
 
-#tituloForm {
+#tituloForm, #salaForm {
   font-weight: bold;
+}
+#salaForm {
+  font-size: 120%;
 }
 
 .popup {
@@ -333,7 +336,7 @@ footer {
   color: ghostwhite;
   text-decoration: none;
   &:hover {
-    transform: scale(1.3);
+    @include transform(scale(1.3), scale(1.3));
     font-weight: bold;
   }
 }
@@ -343,7 +346,88 @@ footer {
   color: ghostwhite;
   text-decoration: none;
   &:hover {
-    transform: scale(1.3);
+    color: green;
+    @include transform(scale(1.3), rotate(-7deg));
+    @include transition(transform 1s);
     font-weight: bold;
   }
+}
+
+#horariosList {
+  font-size: 120%;
+  list-style-type: circle;
+  color: green;
+  a {
+    margin-left: 2em;
+    font-size: 100%;
+    color: black;
+  }
+}
+
+.barra {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 0;
+  height: 20px;
+  z-index: 4;
+  margin-bottom: 3em;
+  p {
+    color: ghostwhite;
+    margin-top: 0;
+  }
+}
+
+#barraEstado {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  overflow: hidden;
+  @include border(3px, solid, black);
+  @include borderradius(1em);
+  
+}
+
+#estado {
+  width: 33%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(203,16,16,1) 75%, rgba(203,16,16,0));
+}
+
+.sala {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  z-index: 4;
+}
+
+#salaCine {
+  background-color: #2D2D2D;
+}
+
+.libre {
+  fill: #f9f9f9;
+}
+
+.seleccionado {
+  fill: lime;
+}
+
+.ocupado {
+  fill: red;
+}
+
+use {
+  cursor: pointer;
+}
+
+.info {
+  position: absolute;
+  padding-left: .5em;
+  z-index: 4;
+  width: 15em;
+  background-color: rgba(0,0,0,.5);
+  @include border(1px, solid, ghostwhite);
 }

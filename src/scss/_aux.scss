@@ -22,3 +22,23 @@
 @mixin borderradius($radius: .5em) {
   border-radius: $radius;
 }
+
+@mixin transform($param1, $param2) {
+  -webkit-transform: $param1 $param2;
+  -moz-transform: $param1 $param2;
+  -ms-transform: $param1 $param2;
+  transform: $param1 $param2;
+}
+
+@mixin transition($param1) {
+  -webkit-transition: $param1;
+  -moz-transition: $param1;
+  -ms-transition: $param1;
+  transition: $param1;
+}
+
+@mixin lineargradient($param1, $param2, $param3) {
+  background: -webkit-linear-gradient($param1, $param2, $param3);
+  background: -moz-linear-gradient($param1, $param2, $param3);
+  background: linear-gradient($param1, $param2, $param3);
+}
