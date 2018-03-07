@@ -9,6 +9,10 @@ module.exports = {
     seats: [
       './src/js/seats.js',
       './src/scss/main.scss'
+    ],
+    payment: [
+      './src/js/payment.js',
+      './src/scss/main.scss'
     ]
   },
   output: {

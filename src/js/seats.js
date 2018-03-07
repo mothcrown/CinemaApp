@@ -5,6 +5,8 @@ const movies = require('./../json/peliculas.json')
 let sala = require('./../json/cinema.json')
 let asientos = require('./../json/salas.json')
 
+const defaultViewBox = ['700', '500']
+
 function loadCinema() {
   if (Storage !== void(0)) {
     if (localStorage.asientos !== undefined) {
@@ -72,9 +74,7 @@ function guardaEstado(asientoId, estado) {
   localStorage.ticket = JSON.stringify(ticket)
 }
 
-$(document).ready(() => {
-  creaSala()
-  cargaInfo()
+function activateSeats() {
   $('use').click((event) => {
     const asientoId = event.currentTarget.id
     $(event.currentTarget).toggleClass('seleccionado')
@@ -86,4 +86,61 @@ $(document).ready(() => {
     }
   })
   $('.ocupado').off('click')
+}
+
+function activateZoom() {
+  $('#vermas').click(() => {
+    let currentViewBox = $('#salaCine').attr('viewBox')
+    currentViewBox = currentViewBox.split(' ')
+    const x = +currentViewBox[2] - 100
+    const y = +currentViewBox[3] - 100
+    $('#salaCine').attr('viewBox', `0 0 ${x} ${y}`)
+  })
+  $('#vermenos').click(() => {
+    let currentViewBox = $('#salaCine').attr('viewBox')
+    currentViewBox = currentViewBox.split(' ')
+    const x = +currentViewBox[2] + 100
+    const y = +currentViewBox[3] + 100
+    $('#salaCine').attr('viewBox', `0 0 ${x} ${y}`)
+  })
+  $('#moveleft').click(() => {
+    let currentViewBox = $('#salaCine').attr('viewBox')
+    currentViewBox = currentViewBox.split(' ')
+    const x = +currentViewBox[2] - 100
+    
+    const y = +currentViewBox[3]
+    $('#salaCine').attr('viewBox', `0 0 ${x} ${y}`)
+  })
+  $('#moveright').click(() => {
+    let currentViewBox = $('#salaCine').attr('viewBox')
+    currentViewBox = currentViewBox.split(' ')
+    const x = (+currentViewBox[2] === 700) ? +currentViewBox[2] : +currentViewBox[2] + 100
+    const y = +currentViewBox[3]
+    $('#salaCine').attr('viewBox', `0 0 ${x} ${y}`)
+  })
+  $('#moveup').click(() => {
+    let currentViewBox = $('#salaCine').attr('viewBox')
+    currentViewBox = currentViewBox.split(' ')
+    const x = +currentViewBox[2]
+    const y = (+currentViewBox[2] === 500) ? +currentViewBox[2] : +currentViewBox[2] + 100
+    $('#salaCine').attr('viewBox', `0 0 ${x} ${y}`)
+  })
+  $('#movedown').click(() => {
+    let currentViewBox = $('#salaCine').attr('viewBox')
+    currentViewBox = currentViewBox.split(' ')
+    const x = +currentViewBox[2]
+    const y = +currentViewBox[3] - 100
+    $('#salaCine').attr('viewBox', `0 0 ${x} ${y}`)
+  })
+  $('#comprarasientos').click(() => {
+    document.location = 'pago.html'
+  })
+
+}
+
+$(document).ready(() => {
+  creaSala()
+  cargaInfo()
+  activateSeats()
+  activateZoom()
 })

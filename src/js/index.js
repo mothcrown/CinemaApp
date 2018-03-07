@@ -237,8 +237,6 @@ function activateButtons() {
   })
 }
 
-
-
 $(document).ready(() => {
   generateCarousel()
   activatePrincipal()

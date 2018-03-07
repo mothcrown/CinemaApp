@@ -42,3 +42,10 @@
   background: -moz-linear-gradient($param1, $param2, $param3);
   background: linear-gradient($param1, $param2, $param3);
 }
+
+@mixin boxsizing() {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}

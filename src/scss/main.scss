@@ -87,6 +87,10 @@ section {
   @include blur(10px);
   transform: scale(1.1);
   z-index: 1;
+  &.backgrounda {
+    top: 2%;
+    height: 150%;
+  }
 }
 
 .carruselaux {
@@ -275,6 +279,11 @@ input[type="button"] {
   height: 100%;
   background-color: rgba(0,0,0,.5);
   z-index: 15;
+  img {
+    position: relative;
+    margin: auto;
+    left: 32%;
+  }
 }
 
 #tituloForm, #salaForm {
@@ -371,7 +380,7 @@ footer {
   top: 0;
   height: 20px;
   z-index: 4;
-  margin-bottom: 3em;
+  margin-bottom: 0em;
   p {
     color: ghostwhite;
     margin-top: 0;
@@ -393,6 +402,9 @@ footer {
   width: 33%;
   height: 100%;
   background: linear-gradient(to right, rgba(203,16,16,1) 75%, rgba(203,16,16,0));
+  &.pago {
+    width: 66%;
+  }
 }
 
 .sala {
@@ -424,10 +436,195 @@ use {
 }
 
 .info {
-  position: absolute;
+  position: relative;
   padding-left: .5em;
   z-index: 4;
-  width: 15em;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin-bottom: 1em;
   background-color: rgba(0,0,0,.5);
   @include border(1px, solid, ghostwhite);
+  @include borderradius;
+  h3 {
+    text-align: center;
+    font-size: 130%;
+    @include textstroke;
+  }
 }
+
+header {
+  img {
+    width: 30em;
+  }
+}
+
+footer {
+  position: relative;
+  z-index: 4;
+  height: 15%;
+  padding: 1em .5em 0;
+  text-align: center;
+  @include lineargradient(to top, rgba(45, 45, 45, 1), rgba(45, 45, 45, 0));
+  color: ghostwhite;
+  p {
+    font-size: 80%;
+    margin-top: .5em;
+    margin-bottom: 0;
+  }
+  a {
+    margin-bottom: 0;
+  }
+  &.footera {
+    margin-top: 300px;
+  }
+}
+
+.botones {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin-bottom: .5em;
+  .botoneszoom {
+    width: 60%;
+  }
+  button {
+    width: 50px;
+    height: 50px;
+    margin-right: .2em;
+    cursor: pointer;
+    @include borderradius(.5em);
+    &:hover {
+      @include transform(scale(1.1), scale(1.1));
+    }
+  }
+  .botoncomprar {
+    width: 20%;
+    button {
+      span {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 1em;
+      }
+      font-size: 120%;
+      font-weight: bold;
+      width: 150px;
+    }
+  }
+}
+
+// $color: #2d2d2d;
+$color: rgba(203,16,16,1);
+
+.formulario {
+  position: relative;
+  z-index: 4;
+  box-sizing: border-box;
+  width: 320px;
+  margin: auto;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+  padding-bottom: 20px;
+  border-radius: 3px;
+  color: ghostwhite;
+  @include border(1px, solid, ghostwhite);
+  @include borderradius;
+  h1 {
+    margin-top: 0;
+    box-sizing: border-box;
+    padding: 2em;
+    padding-left: 3em;
+  }
+  h1, input::-webkit-input-placeholder, button {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h1 {
+    height: 100px;
+    width: 100%;
+    font-size: 18px;
+    background: $color;
+    color: ghostwhite;
+    @include borderradius;
+    //border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+  }
+  
+  input {
+    margin: 40px 25px;
+    width: 280px;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px ghostwhite;
+    transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+    // background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color 4%);
+    background: rgba(255,255,255,0);
+    //background-position: -200px 0;
+    
+    //background-size: 200px 100%;
+    //background-repeat: no-repeat;
+    // color: darken(ghostwhite, 20%);
+    color: ghostwhite;
+    &::-webkit-input-placeholder {
+      color: ghostwhite;
+      font-size: 11px;
+      visibility: visible !important;
+    }
+    &:focus, &:valid {
+      box-shadow: none;
+      outline: none;
+      background-position: 0 0;
+      &::-webkit-input-placeholder {
+        transform: translateY(-20px);
+      }
+    }
+  }
+  
+  button {
+    border: none;
+    background: $color;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 200px;
+    color: ghostwhite;
+    margin-left: 70px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    &:hover { 
+      transform: translateY(-3px);
+      box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+    }
+  }
+}
+
+.precio {
+  display: flex;
+  flex-flow: column nowrap;
+  div {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-right: 1em;
+  }
+}
+
+#precioTotal {
+  font-size: 140%;
+}
+
+#btnIndex {
+  position: relative;
+  margin-left: 65%;
+  margin-top: 30%;
+}
+
+
